@@ -34,6 +34,8 @@
 #  include <unix.h>  /* get the definition of fileno */
 #endif
 
+#include "local.h"
+
 _STLP_BEGIN_NAMESPACE
 
 #if defined (_STLP_WCE)
