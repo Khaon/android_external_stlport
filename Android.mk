@@ -37,8 +37,7 @@ libstlport_src_files := \
 libstlport_c_includes := \
 	external/stlport/stlport \
 	bionic \
-    bionic/libstdc++/include \
-    bionic/libc/stdio
+        bionic/libstdc++/include \
 
 libstlport_cflags := -D_GNU_SOURCE
 libstlport_cppflags := -fuse-cxa-atexit
