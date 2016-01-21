@@ -66,8 +66,7 @@ inline int _FILE_fd(const FILE *__f) { return __f->__file; }
 inline int _FILE_fd(const FILE *__f) { return (int) __f->__pad[2]; }
 
 #elif defined (__hpux) /* && defined(__hppa) && defined(__HP_aCC)) */ || \
-      defined (__MVS__) || \
-      defined (_STLP_USE_UCLIBC) /* should be before _STLP_USE_GLIBC */
+      defined (__BIONIC__)
 
 inline int _FILE_fd(const FILE *__f) { return fileno(__CONST_CAST(FILE*, __f)); }
 
